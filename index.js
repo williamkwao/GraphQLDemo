@@ -70,6 +70,8 @@ const server = new ApolloServer({
   subscriptions: {
     onConnect: () => console.log('Connected to websocket'),
   },
+  introspection: true,
+  playground: true,
   tracing: true
 });
 
