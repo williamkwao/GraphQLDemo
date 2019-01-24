@@ -77,7 +77,7 @@ const app = express();
 server.applyMiddleware({ app })
 
 
-const PORT = 4000;
+const PORT = 80;
 const httpServer = http.createServer(app);
 server.installSubscriptionHandlers(httpServer);
 httpServer.listen(PORT, () => {
